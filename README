@@ -3,7 +3,7 @@ Zomato SQL Analysis Project
 This project focuses on analyzing a food delivery dataset using SQL to understand customer behavior, spending patterns, and overall business performance.
 Instead of just writing queries, the goal here was to solve practical business problems and interpret the results in a meaningful way.
 ________________________________________
-🔹 What This Project Covers
+- What This Project Covers
 The analysis answers key business questions related to:
 •	Customer retention 
 •	Revenue distribution 
@@ -12,14 +12,14 @@ The analysis answers key business questions related to:
 •	Restaurant and customer contribution 
 •	City-wise demand patterns 
 ________________________________________
-🔹 Tools & Concepts Used
+- Tools & Concepts Used
 •	SQL (MySQL) 
 •	Joins (INNER JOIN) 
 •	Aggregations (SUM, AVG, COUNT) 
 •	Window Functions (NTILE, LAG) 
 •	Date Functions (DATEDIFF, STR_TO_DATE) 
 ________________________________________
-🔹 Analysis & Insights
+- Analysis & Insights
 ________________________________________
  Q1: What % of customers never place a second order?
 Insight:
@@ -60,19 +60,19 @@ Q10: Which city generates the highest revenue?
 Insight:
 Mumbai generates the highest revenue (1,934,426), indicating stronger demand and higher order volumes compared to other cities.
 ________________________________________
-🔹 Project Structure
+- Project Structure
 zomato-sql-analysis/
 │
 ├── zomato_analysis.sql   -- All queries (questions + solutions)
 ├── README.md             -- Project documentation
 └── dataset/              -- CSV files (if included)
 ________________________________________
-🔹 How to Run
+- How to Run
 1.	Import the dataset into MySQL 
-2.	Run the SQL file (zomato_analysis.sql) 
+2.	Run the SQL file (zomato_sql_analysis_harsh.sql) 
 3.	Execute queries step-by-step to view results 
 ________________________________________
-🔹 Key Takeaways
+- Key Takeaways
 •	Strong customer retention (though dataset-biased) 
 •	Revenue is not concentrated among a few users 
 •	Customers order infrequently 
@@ -80,9 +80,9 @@ ________________________________________
 •	Reliable delivery performance 
 •	Demand varies across cities and days 
 ________________________________________
-🔹 Final Note
+- Final Note
 This project is based on a sample dataset, so some results may not fully reflect real-world behavior. The focus here is on the analytical approach, query logic, and interpretation of results.
 ________________________________________
-🔹 Author
+- Author
 Harsh Yadav
 
