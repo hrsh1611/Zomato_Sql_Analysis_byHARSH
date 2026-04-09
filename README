@@ -1,4 +1,10 @@
 Zomato SQL Analysis Project
+🔹 Key Highlights
+- Built end-to-end SQL analysis on real-world dataset  
+- Solved 10 business-focused problems  
+- Used window functions (NTILE, LAG)  
+- Extracted actionable insights from raw data  
+
 🔹 Overview
 This project focuses on analyzing a food delivery dataset using SQL to understand customer behavior, spending patterns, and overall business performance.
 Instead of just writing queries, the goal here was to solve practical business problems and interpret the results in a meaningful way.
@@ -22,6 +28,33 @@ ________________________________________
 - Analysis & Insights
 ________________________________________
  Q1: What % of customers never place a second order?
+Sample Query: 
+
+
+Revenue Contribution by Top 5% Customers
+
+{
+WITH customer_revenue AS (
+    SELECT 
+        customer_id,
+        SUM(total_amount) AS revenue
+    FROM orders
+    GROUP BY customer_id
+),
+ranked_customers AS (
+    SELECT 
+        customer_id,
+        revenue,
+        NTILE(20) OVER (ORDER BY revenue DESC) AS bucket
+    FROM customer_revenue
+)
+SELECT 
+    ROUND(
+        SUM(CASE WHEN bucket = 1 THEN revenue ELSE 0 END) * 100.0 / SUM(revenue),
+        2
+    ) AS top_5pct_revenue_contribution
+FROM ranked_customers;
+} (all queries can be found in folder named "queries")
 Insight:
 Only around 1% customers placed just one order, which indicates very high retention. However, this likely reflects a dataset biased toward active users rather than a real-world scenario.
 ________________________________________
