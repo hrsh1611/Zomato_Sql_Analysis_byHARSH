@@ -1,0 +1,88 @@
+Zomato SQL Analysis Project
+🔹 Overview
+This project focuses on analyzing a food delivery dataset using SQL to understand customer behavior, spending patterns, and overall business performance.
+Instead of just writing queries, the goal here was to solve practical business problems and interpret the results in a meaningful way.
+________________________________________
+🔹 What This Project Covers
+The analysis answers key business questions related to:
+•	Customer retention 
+•	Revenue distribution 
+•	Ordering frequency 
+•	Cancellation and delivery performance 
+•	Restaurant and customer contribution 
+•	City-wise demand patterns 
+________________________________________
+🔹 Tools & Concepts Used
+•	SQL (MySQL) 
+•	Joins (INNER JOIN) 
+•	Aggregations (SUM, AVG, COUNT) 
+•	Window Functions (NTILE, LAG) 
+•	Date Functions (DATEDIFF, STR_TO_DATE) 
+________________________________________
+🔹 Analysis & Insights
+________________________________________
+ Q1: What % of customers never place a second order?
+Insight:
+Only around 1% customers placed just one order, which indicates very high retention. However, this likely reflects a dataset biased toward active users rather than a real-world scenario.
+________________________________________
+ Q2: How much revenue is contributed by top 5% customers?
+Insight:
+Top 5% customers contribute only 8.85% of total revenue, showing that revenue is fairly distributed and not heavily dependent on a small group of users.
+________________________________________Q3: What is the average time between consecutive orders?
+Insight:
+Customers take around 81.46 days between orders on average, indicating relatively low ordering frequency and potential scope to improve engagement.
+________________________________________
+Q4: What % of orders are cancelled?
+Insight:
+Around 9.83% of orders get cancelled, which is a noticeable portion and may point toward operational issues like delays or availability problems.
+________________________________________
+Q5: Which are the top 5 restaurants by revenue?
+Insight:
+A few restaurants consistently generate higher revenue than others, indicating that performance is uneven across partners and some outlets drive a larger share of sales.
+________________________________________
+Q6: What is the average order value?
+Insight:
+The average order value is ₹215, giving a sense of typical customer spending per order on the platform.
+________________________________________
+Q7: Which day has the highest number of orders?
+Insight:
+Orders peak on Wednesdays (14,572 orders), showing a clear mid-week spike in customer activity.
+________________________________________
+Q8: What % of orders are successfully delivered?
+Insight:
+Around 90.17% of orders are successfully delivered, indicating a fairly reliable delivery system with limited failures.
+________________________________________
+Q9: Who are the top 5 customers by total spending?
+Insight:
+Customers like Gautam Mane, Balveer Patla, Avni Ramaswamy, Tristan Hayer, and Pushti Kakar stand out in terms of spending. However, overall revenue is still not highly concentrated, as top users contribute a relatively small share (8.85%).
+________________________________________
+Q10: Which city generates the highest revenue?
+Insight:
+Mumbai generates the highest revenue (1,934,426), indicating stronger demand and higher order volumes compared to other cities.
+________________________________________
+🔹 Project Structure
+zomato-sql-analysis/
+│
+├── zomato_analysis.sql   -- All queries (questions + solutions)
+├── README.md             -- Project documentation
+└── dataset/              -- CSV files (if included)
+________________________________________
+🔹 How to Run
+1.	Import the dataset into MySQL 
+2.	Run the SQL file (zomato_analysis.sql) 
+3.	Execute queries step-by-step to view results 
+________________________________________
+🔹 Key Takeaways
+•	Strong customer retention (though dataset-biased) 
+•	Revenue is not concentrated among a few users 
+•	Customers order infrequently 
+•	Moderate cancellation rate 
+•	Reliable delivery performance 
+•	Demand varies across cities and days 
+________________________________________
+🔹 Final Note
+This project is based on a sample dataset, so some results may not fully reflect real-world behavior. The focus here is on the analytical approach, query logic, and interpretation of results.
+________________________________________
+🔹 Author
+Harsh Yadav
+
